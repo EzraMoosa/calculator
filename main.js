@@ -13,7 +13,6 @@ buttonArray = [
     "C"
 ];
 
-
 // Create buttons from array
 buttonArray.forEach(button => {
     // Create a new button element
@@ -21,6 +20,29 @@ buttonArray.forEach(button => {
 
     // Set text content of each button
     btn.textContent = button;
+
+    // Add click event listener for each button
+    btn.addEventListener('click', () => {
+        // Check if user clicked C / Clear
+        if (button === "C") {
+            display.value = ""
+        } 
+        
+        // Else if user presses '='
+        else if (button === "=") {
+
+            // Evaluate user's expression
+            try {
+                display.value = eval(display.value);
+            } catch {
+                display.value = 'Error'
+            };
+            
+        } else {
+            // Append button presses to display value
+            display.value += button;
+        }
+    });
 
     // Append button to buttons div
     buttons.appendChild(btn)

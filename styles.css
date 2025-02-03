@@ -4,4 +4,13 @@ body {
     box-sizing: border-box;
     height: 100vh;
     place-items: center;
+    background: #1a1a1a;
+}
+
+#calculator {
+    width: 300px;
+    padding: 1em;
+    background: white;
+    border-radius: 1em;
+    text-align: center;
 }

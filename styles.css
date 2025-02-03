@@ -17,3 +17,10 @@ body {
     border-radius: 1em;
     text-align: center;
 }
+
+#display {
+    width: 100%;
+    font-size: 2em;
+    margin: .5em auto;
+    text-align: right;
+}

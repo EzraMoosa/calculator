@@ -14,22 +14,22 @@ buttonArray = [
 ];
 
 // Create buttons from array
-buttonArray.forEach(button => {
+buttonArray.forEach(operator => {
     // Create a new button element
     const btn = document.createElement("button");
 
     // Set text content of each button
-    btn.textContent = button;
+    btn.textContent = operator;
 
     // Add click event listener for each button
     btn.addEventListener('click', () => {
         // Check if user clicked C / Clear
-        if (button === "C") {
+        if (operator === "C") {
             display.value = ""
         } 
         
         // Else if user presses '='
-        else if (button === "=") {
+        else if (operator === "=") {
 
             // Evaluate user's expression
             try {
@@ -40,7 +40,7 @@ buttonArray.forEach(button => {
             
         } else {
             // Append button presses to display value
-            display.value += button;
+            display.value += operator;
         }
     });
 

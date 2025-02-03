@@ -4,6 +4,9 @@ const display = document.getElementById("display");
 // Buttons container
 const buttons = document.getElementById("buttons");
 
+// Operator elements
+const operators = ["+", "-", "*", "/", "=", "C"]
+
 // Calculator buttons in an array
 buttonArray = [
     "7", "8", "9", "/",
@@ -21,12 +24,17 @@ buttonArray.forEach(operator => {
     // Set text content of each button
     btn.textContent = operator;
 
+    //
+    if (operators.includes(operator)) {
+        btn.classList.add("operator")
+    };
+
     // Add click event listener for each button
     btn.addEventListener('click', () => {
         // Check if user clicked C / Clear
         if (operator === "C") {
             display.value = ""
-        } 
+        }
         
         // Else if user presses '='
         else if (operator === "=") {

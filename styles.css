@@ -22,7 +22,15 @@ body {
     width: 100%;
     font-size: 2em;
     margin: .5em auto;
-    text-align: right;
+    text-align: end;
+    background: #1a1a1a;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+#display::placeholder {
+    color: white;
 }
 
 #buttons {

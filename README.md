@@ -2,6 +2,8 @@
 
 A simple calculator built using only HTML, CSS, and JavaScript. This project demonstrates how to create a fully functional calculator without relying on any external libraries or frameworks. ✨
 
+![calculator](/screenshots/image.png)
+
 ## Features 🌟
 
 - Basic arithmetic operations (addition, subtraction, multiplication, division) ➕➖✖️➗
